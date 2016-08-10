@@ -919,7 +919,7 @@
 		@include padding(9em, 0, (0,0,$size-element-margin,0));
 		@include dark(#4686a0);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('images/venice2.png'),		url('../images/venice.png'),		linear-gradient(45deg, $color-accent1-alt 5%, $color-accent3-alt 30%, $color-accent6-alt);
+		background-image:		url('images/venice.png'),		url('../images/venice2.png'),		linear-gradient(45deg, $color-accent1-alt 5%, $color-accent3-alt 30%, $color-accent6-alt);
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
 		overflow: hidden;
