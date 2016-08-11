@@ -1221,7 +1221,7 @@
 
 	#footer {
 		padding: 6em 0 6em 0;
-		background-color: #4686a0;
+		background-color: #9dc66b;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		/*background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);*/
@@ -1334,3 +1334,9 @@
 					margin-left: 0;
 					padding: 0;
 				}
+
+
+
+		.banner-list {margin-bottom: 20px;}
+		.banner-list li {color: rgba(255,255,255, 0.8); margin-bottom: 5px;list-style-type: none; text-align: justify;}
+		.banner-list li i { margin-right: 10px; color: #9dc66b; }
