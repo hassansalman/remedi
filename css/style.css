@@ -398,6 +398,7 @@ Media Queries
 	h4 {font-size: 16px;}
 	img {float: none; display: block; margin: 20px auto;}
 	iframe {max-height: 200px;}
+  .navbar > .container .navbar-brand img {content:url("../img/main_logo.png"); margin:0 5px;}
   #banner {padding: 0;}
 	.banner-content h1 {font-size: 34px;}
 	.headline h1 {font-size: 30px;}
