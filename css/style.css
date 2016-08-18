@@ -1,12 +1,4 @@
 /* ==========================================================================
-Template Name 	: Cleany
-Author				: Simplesphere - Anoop Jeewoolall
-Theme Url 			: http://websites.simplesphere.net/cleany/
-Description		: Cleany - Landing Page
-Website				: http://www.simplesphere.net
-========================================================================== */
-
-/* ==========================================================================
 Basic Styling
 ========================================================================== */
 body { width: 100%; min-height: 100%; font-family: "Open Sans", "Raleway", Lucida Sans Unicode, Verdana, Helvetica, sans-serif; font-size: 14px; line-height: 23px; color: #7a7a7a; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
@@ -129,6 +121,7 @@ Color Customizations
 
 .blue {color: #88b828;}
 
+.pink-text {color: #b45c8f;}
 .white-text {color: #FFF;}
 .white-text p {color: #FFF;}
 .white-text h3 {color: #FFF;}
@@ -196,6 +189,7 @@ Banner
 ========================================================================== */
 #banner {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url(../img/venice2.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height:100%; position: relative; background-repeat: none; background-position: center;}
 #mark-head {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url('https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/03/29191535/150401-10-Reasons-to-Visit-Maui-Beach.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height:100%; position: relative; background-repeat: none; background-position: center;}
+#deliv-head {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url('http://www.borongaja.com/data_images/out/1/579195-city-lights.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height:100%; position: relative; background-repeat: none; background-position: center;}
 .banner-content { clear: both; padding-top: 40px; text-align: center; padding: 6em 0 6em 0; background-color: rgba(62, 49, 35, 0.5);}
 .banner-content h1 {font-size: 50px; color: #FFF;  border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
 .banner-content h2 {color: #FFF;}
@@ -217,7 +211,7 @@ Process Steps
 ========================================================================== */
 ul.steps-list li {margin-bottom: 25px; border-bottom:1px solid rgba(0,0,0,0.03);}
 ul.steps-list li:last-child {border-bottom: none;}
-ul.steps-list li span{ float:left; border-radius: 50%; width: 55px; height: 55px; line-height: 55px; display:block; font-size:22px; font-weight:bold; text-align:center; background: #1a1a1a; }
+ul.steps-list li span{ float:left; border-radius: 50%; width: 55px; height: 55px; line-height: 55px; display:block; font-size:22px; font-weight:bold; text-align:center; background: #b45c8f; color:#fff; }
 ul.steps-list li h4,
 ul.steps-list li p { margin-left: 80px; }
 ul.steps-list li h5 { font-weight:600;}
