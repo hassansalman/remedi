@@ -195,6 +195,7 @@ Logo
 Banner
 ========================================================================== */
 #banner {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url(../img/venice2.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height:100%; position: relative; background-repeat: none; background-position: center;}
+#mark-head {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url('https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/03/29191535/150401-10-Reasons-to-Visit-Maui-Beach.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height:100%; position: relative; background-repeat: none; background-position: center;}
 .banner-content { clear: both; padding-top: 40px; text-align: center; padding: 6em 0 6em 0; background-color: rgba(62, 49, 35, 0.5);}
 .banner-content h1 {font-size: 50px; color: #FFF;  border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
 .banner-content h2 {color: #FFF;}
@@ -365,6 +366,21 @@ Social Links
 .social li.skype { background: #00b0f6; }
 .social li.youtube { background: #e22d24; }
 .social li:hover {background:#31373a; cursor: pointer; }
+
+/* ==========================================================================
+Search Bar
+ ========================================================================== */
+#custom-search-input {padding: 3px;border: solid 1px #E4E4E4;border-radius: 6px;background-color: #fff; float: right; width: 20em}
+#custom-search-input input {border: 0;box-shadow: none;}
+#custom-search-input button {margin: 2px 0 0 0;background: none;box-shadow: none;border: 0;color: #666666;padding: 0 8px 0 10px; border-left: solid 1px #ccc;}
+#custom-search-input button:hover {border: 0;box-shadow: none;border-left: solid 1px #ccc;}
+#custom-search-input .glyphicon-search {font-size: 23px;}
+
+/* ==========================================================================
+Custom Modal
+ ========================================================================== */
+.modal-header {border-bottom: none;}
+.modal-footer {border-top: none; text-align: center;}
 
 /* ==========================================================================
 Media Queries
