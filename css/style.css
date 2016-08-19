@@ -14,7 +14,7 @@ h4 {font-size: 17px; font-weight: 700; color: #2d2d2d;}
 p { margin-bottom: 20px; line-height: 24px;}
 
 a {-webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; color: #88b828;}
-a:hover, a:focus { text-decoration: none; color: #88b828; outline: none; }
+a:hover, a:focus { text-decoration: none; color: #2d2d2d; outline: none; }
 
 ul { margin: 0; padding: 0; list-style: none;}
 
@@ -445,6 +445,38 @@ Custom Modal
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	background-color:#eee;
+}
+
+@media (min-width: 992px) {
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;}
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;}
 }
 /* ==========================================================================
 Media Queries
