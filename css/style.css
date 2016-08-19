@@ -131,6 +131,7 @@ Color Customizations
 /* ==========================================================================
 Line Font
 ========================================================================== */
+.line-font-big {font-size: 96px;}
 .line-font {font-size: 48px;}
 .line-font-small {font-size: 20px;}
 
@@ -220,7 +221,7 @@ ul.steps-list li h5 { font-weight:600;}
 Main Point
 ========================================================================== */
 .main-point {margin-bottom: 20px; }
-.main-point i { display: block; font-size: 56px; color: #1a1a1a;}
+.main-point i { display: block; font-size: 96px; color: #1a1a1a;}
 .main-point h3 {font-size: 22px; font-weight: 300; margin-top: 20px; }
 
 /* ==========================================================================
@@ -422,56 +423,4 @@ Media Queries
 	.testimonial-inner img {float: none; margin:0 auto; margin-bottom: 20px;}
 	.contact-list, .quick-links {margin-bottom: 30px;}
 	.copyright {float: none;}
-}
-
-
-#login-dp{
-    min-width: 250px;
-    padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
-}
-#login-dp .help-block{
-    font-size:12px
-}
-#login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
-}
-#login-dp .social-buttons{
-    margin:12px 0
-}
-#login-dp .social-buttons a{
-    width: 49%;
-}
-#login-dp .form-group {
-    margin-bottom: 10px;
-}
-.btn-fb{
-    color: #fff;
-    background-color:#3b5998;
-}
-.btn-fb:hover{
-    color: #fff;
-    background-color:#496ebc
-}
-.btn-tw{
-    color: #fff;
-    background-color:#55acee;
-}
-.btn-tw:hover{
-    color: #fff;
-    background-color:#59b5fa;
-}
-@media(max-width:768px){
-    #login-dp{
-        background-color: inherit;
-        color: #fff;
-    }
-    #login-dp .bottom{
-        background-color: inherit;
-        border-top:0 none;
-    }
 }

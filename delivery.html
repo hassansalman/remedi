@@ -62,9 +62,9 @@
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="#intro">About</a></li>
 							<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Strains <b class="caret"></b></a>
 							 <ul class="dropdown-menu">
-								 <li><a href="products.html">All Products</a></li>
+								 <li><a href="products.html">All Strains</a></li>
 								 <li class="divider"></li>
 								 <li class="nav-header">Flowers</li>
 								 <li><a href="#">Diamond OG</a></li>
@@ -243,7 +243,7 @@
   					<!-- End How It Works List -->
   				</div>
   				<div class="col-md-7">
-            <img src="img/side-img2.png" class="img-responsive" alt="" title="">
+            <img src="https://cdn0.vox-cdn.com/uploads/chorus_image/image/47937273/9054369114_7f37322cfb_z.0.jpg" class="img-responsive" alt="" title="">
   				</div>
   			</div>
   		</div>
@@ -272,9 +272,9 @@
 				<div class="col-lg-12 text-center white-text">
 					<div class="headline">
 						<h2><strong>Ready</strong> To Join  ?</h2>
-						<p class="subline">Sign up and get our latest updates and product release</p>
+						<p class="subline">Sign up now for exclusive deals in Westwood.</p>
 					</div>
-					<a href="#" class="btn btn-transparent btn-big">Get Started</a>
+					<a href="#signup" class="btn btn-transparent btn-big" data-toggle="modal" data-target="#squarespaceModal">Get Started</a>
 				</div>
 			</div>
 		</div>
@@ -345,7 +345,9 @@
 			</div>
 		</div>
 	</footer>
+
 	<!-- End Footer Bottom -->
+
 
 	<!----modal starts here--->
   <div id="modal" class="modal fade" role='dialog' style="text-align:center;">
@@ -367,6 +369,69 @@
   		 </div>
    </div>
 <!--Modal ends here--->
+
+<!-- Signup Modal -->
+
+
+<!-- line modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+			<h3 class="modal-title" id="lineModalLabel">Remedi Sign-Up Form</h3>
+		</div>
+
+		<div class="modal-body">
+
+            <!-- content goes here -->
+					<fieldset>
+		      <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+							<!-- Text input-->
+
+
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload a picture of your doctor's recommendation</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+					</fieldset>
+		      </form>
+		</div>
+		<div class="modal-footer">
+			<div class="btn-group btn-group-justified" role="group" aria-label="group button">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
+				</div>
+				<div class="btn-group btn-delete hidden" role="group">
+					<button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<!-- Signup Modal -->
+
+
+
 	<!-- Start Js Files -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script><!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
@@ -375,6 +440,12 @@
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script><!-- Script for Lightbox Image  -->
 	<script src="js/custom.js" type="text/javascript"></script><!-- Script File containing all customizations  -->
 	<!-- End Js Files  -->
-
+	<script>
+	$(document).ready(function(){
+	    $("#myBtn").click(function(){
+	        $("#signup-modal").modal();
+	    });
+	});
+	</script>
 </body>
 </html>
