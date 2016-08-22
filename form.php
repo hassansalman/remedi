@@ -1,7 +1,7 @@
 <?php
 
 	$subject = 'Cleany Banner Form Subsciption'; // Set email subject line here
-	$mailto  = 'hassansalman8@gmail.com'; // Email address to send form submission to
+	$mailto  = 'youremail@domain.com'; // Email address to send form submission to
 
 	$name = $_POST['banner-name'];
 	$email = $_POST['banner-email'];
