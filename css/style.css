@@ -375,118 +375,44 @@ Search Bar
 #custom-search-input .glyphicon-search {font-size: 23px;}
 
 /* ==========================================================================
-Custom Modal
+Age Verification Modal
  ========================================================================== */
 .modal-header {border-bottom: none;}
 .modal-footer {border-top: none; text-align: center;}
 
-.jasgrid{padding:0;}
-.box-item {
-    float: left;
-    opacity: 1;
-    overflow: hidden;
-    position: relative;
-}
+/* ==========================================================================
+News Grid
+ ========================================================================== */
 
-.box-item img {
-    width: 100%;
-}
+.jasgrid{padding:0;}
+.box-item { float: left; opacity: 1; overflow: hidden; position: relative; border: 2px solid #fff;}
+.box-item img {width: 100%;}
 .box-item a,span{color:#FFF;}
 
-.box-item .box-post span.meta {
-    font-family:  sans-serif;
-    font-size: 12px;
-    color: #fff;
-    margin-top: 15px;
-    display: block;
-}
+.box-item .box-post span.meta { font-family:  sans-serif; font-size: 12px; color: #fff; margin-top: 15px; display: block;}
 
-.box-item .box-post span.meta span {
-    margin-right: 15px;
-}
+.box-item .box-post span.meta span {margin-right: 15px;}
 
-.box-item .box-post {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
-    padding: 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.box-item .box-post h1..post-title {
-   font-size:10pt;
-}
+.box-item .box-post { position: absolute; left: 0; bottom: 0; width: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%); padding: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.box-item .box-post h1..post-title {font-size:10pt;}
+
+/* ==========================================================================
+Parralax
+ ========================================================================== */
+.content-space-one { padding: 0px; margin-bottom: 0px; color: inherit; background: url(http://cannabersity.us/wp-content/uploads/2013/11/cropped-Legalizing_Marijuana.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 100px; padding-bottom: 100px;}
+
+.content-space-two { padding: 0px; margin-bottom: 0px; color: inherit; background: url(http://ideal420soil.com/wp-content/uploads/bulk-pricing-cannabis-soil-ideal-420-soil.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 100px; padding-bottom: 100px;}
+
+#myCarousel .carousel-caption { left:0; right:0; bottom:0; text-align:left; padding:10px; background:rgba(0,0,0,0.6); text-shadow:none;}
+
+#myCarousel .list-group { position:absolute; top:0; right:0;}
+#myCarousel .list-group-item { border-radius:0px; cursor:pointer;}
+#myCarousel .list-group .active {background-color:#eee;}
+
+.centered-form{margin-top: 60px;}
+.centered-form .panel{ background: rgba(255, 255, 255, 0.8); box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;}
 
 
-.content-space-one {
-  padding: 0px;
-  margin-bottom: 0px;
-  color: inherit;
-  background: url(http://cannabersity.us/wp-content/uploads/2013/11/cropped-Legalizing_Marijuana.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.content-space-two {
-  padding: 0px;
-  margin-bottom: 0px;
-  color: inherit;
-  background: url(http://ideal420soil.com/wp-content/uploads/bulk-pricing-cannabis-soil-ideal-420-soil.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-#myCarousel .carousel-caption {
-    left:0;
-	right:0;
-	bottom:0;
-	text-align:left;
-	padding:10px;
-	background:rgba(0,0,0,0.6);
-	text-shadow:none;
-}
-
-#myCarousel .list-group {
-	position:absolute;
-	top:0;
-	right:0;
-}
-#myCarousel .list-group-item {
-	border-radius:0px;
-	cursor:pointer;
-}
-#myCarousel .list-group .active {
-	background-color:#eee;
-}
-
-.centered-form{
-	margin-top: 60px;
-}
-
-.centered-form .panel{
-	background: rgba(255, 255, 255, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
-}
-
-@media (min-width: 992px) {
-	#myCarousel {padding-right:33.3333%;}
-	#myCarousel .carousel-controls {display:none;}
-}
-@media (max-width: 991px) {
-	.carousel-caption p,
-	#myCarousel .list-group {display:none;}
-}
 /* ==========================================================================
 Media Queries
  ========================================================================== */
@@ -533,4 +459,13 @@ Media Queries
 	.testimonial-inner img {float: none; margin:0 auto; margin-bottom: 20px;}
 	.contact-list, .quick-links {margin-bottom: 30px;}
 	.copyright {float: none;}
+}
+
+@media (min-width: 992px) {
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;}
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;}
 }
