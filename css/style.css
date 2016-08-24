@@ -418,9 +418,7 @@ Login Dropdown
  ========================================================================== */
 
 #login-dp{ min-width: 250px; padding: 14px 14px 0; overflow:hidden; background-color:rgba(255,255,255,.8);}
-#login-dp .help-block{
-    font-size:12px
-}
+#login-dp .help-block{ font-size:12px;}
 #login-dp .bottom{ background-color:rgba(255,255,255,.8); border-top:1px solid #ddd; clear:both; padding:14px;}
 #login-dp .social-buttons{ margin:12px 0;}
 #login-dp .social-buttons a{ width: 49%;}
@@ -431,7 +429,7 @@ Login Dropdown
 .btn-tw:hover{ color: #fff; background-color:#59b5fa;}
 
 /* ==========================================================================
-Consulting Features/Pricing Panel
+ Plans Panel
  ========================================================================== */
 
 .panel-pricing { -moz-transition: all .3s ease; -o-transition: all .3s ease; -webkit-transition: all .3s ease;}
@@ -479,6 +477,7 @@ Media Queries
 	iframe {max-height: 200px;}
   .navbar-brand img {content:url("../img/main_logo.png"); margin:0 5px;}
   #banner {padding: 0;}
+  .banner-content {padding: 0;}
 	.banner-content h1 {font-size: 34px;}
 	.headline h1 {font-size: 30px;}
 	.headline h2 {font-size: 28px;}
