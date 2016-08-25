@@ -195,8 +195,24 @@
                                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleInputPassword1">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                  <label for="phone">Primary Phone</label>
+                                  <input id="phone" name="phone" type="tel" class="form-control" required>
+                              </div>
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                      <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                      <div class="form-group">
+                                        <label for="exampleInputPassword1">Re-enter Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </form>
                             </fieldset>
@@ -206,10 +222,10 @@
                         </div>
                         <div class="tab-pane" role="tabpanel" id="step2">
                             <h3>Step 2</h3>
-                            <p> Upload Photo of California Identification Card</p>
+                            <p> You can upload photos taken with your phone. If you have any issues, images can be submitted by email at remedibrand@gmail.com</p>
                             <div class="form-group">
                               <label for="exampleInputFile">File input</label>
-                              <input type="file" id="exampleInputFile">
+                              <input type="file" id="calID">
                               <p class="help-block">Upload a picture of your California ID Card</p>
                             </div>
                             <ul class="list-inline pull-right">
@@ -219,10 +235,10 @@
                         </div>
                         <div class="tab-pane" role="tabpanel" id="step3">
                             <h3>Step 3</h3>
-                            <p>Upload Photo of Medical Marijuana Recommendation</p>
+                            <p>In order to purchase Marijuana legally in your state you must have a valid Marijuana ID or a valid Recommendation letter from your physician.</p>
                             <div class="form-group">
                               <label for="exampleInputFile">File input</label>
-                              <input type="file" id="exampleInputFile">
+                              <input type="file" id="calRec">
                               <p class="help-block">Upload a picture of your doctor's recommendation</p>
                             </div>
                             <ul class="list-inline pull-right">
