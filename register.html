@@ -123,160 +123,130 @@
 				</div>
 			</nav>
 		</div>
-		<!-- End Header -->
-		<div class="banner-content">
-			<div class="container">
-				<div class="row">
-					<!-- Start Header Text -->
-					<div class="col-md-12 col-sm-12">
-						<img src="img/logo_white.png" class="img-responsive" style="width:175px;margin-left:auto;margin-right:auto;">
-						<h1>An <strong>Exclusive</strong> Delivery Service</h1>
-						<h2>Welcome To Our Brand</a> </h2>
-						<h5>Enlighten Yourself</h5>
 
-					</div>
-					<!-- End Header Text -->
-					<!-- Start Banner Optin Form-->
-					<!-- <div class="col-lg-4 col-md-4 col-md-offset-1 col-sm-5">
-						<div class="banner-form">
-							<div class="form-title">
-								<h2>Start your FREE trial</h2>
-							</div>
-							<div class="form-body">
-								<p>To stay tuned to our updates, enter Your Name and Email Address!</p>
-								<form id="banner-form" class="form" method="post" action="form.php">
-									<div class="form-group">
-										<input name="banner-name" id="banner-name" type="text" class="form-control" required placeholder="Your Name">
-									</div>
-									<div class="form-group">
-										<input name="banner-email" id="banner-email" type="text" class="form-control" required placeholder="Your E-mail">
-									</div>
-									<button type="submit" class="btn btn-default btn-submit">Subscribe</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<- End Banner Optin Form -->
-				</div>
-			</div>
-		</div>
+
+  <section class="section bg-white">
+    <div class="container">
+    	<div class="row">
+    		<section>
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <div class="connecting-line"></div>
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li role="presentation" class="active">
+                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-folder-open"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-pencil"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-picture"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form role="form">
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                            <h3>Step 1</h3>
+                            <p> Please Enter Information</p>
+                            <fieldset>
+                            <form>
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                      <input type="text" name="f_name" id="f_name" class="form-control" required placeholder="First Name">
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                      <input type="text" name="l_name" id="l_name" class="form-control" required placeholder="Last Name">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <!-- Text input-->
+
+
+                                <div class="form-group">
+                                  <label for="exampleInputFile">File input</label>
+                                  <input type="file" id="exampleInputFile">
+                                  <p class="help-block">Upload a picture of your doctor's recommendation</p>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox"> Check me out
+                                  </label>
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                              </form>
+                            </fieldset>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                            <h3>Step 2</h3>
+                            <p> Upload Photo of California Identification Card</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step3">
+                            <h3>Step 3</h3>
+                            <p>Upload Photo of Medical Marijuana Recommendation</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                            <h3>Complete</h3>
+                            <p>You have successfully completed all steps.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+       </div>
     </div>
-	<!-- End Banner -->
 
-
-  		<!-- Three Main Points -->
-  		<section class="section bg-blue-pattern white-text" style="background-color:#b45c8f;">
-  			<div class="container">
-  				<div class="row">
-  					<div class="col-lg-12">
-  						<div class="headline">
-  							<h2>Remedi Deliveries</h2>
-  							<p>CANNABIS IS OUR CULTURE</p>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="row text-center">
-  					<div class="col-md-4">
-  						<div class="main-point"><!-- Main Point -->
-  							<i class="line-font icon-speedometer"></i><!-- Main Point Icon -->
-  							<h3>Fast & Free</h3><!-- Main Point Title -->
-  							<p></p><!-- Main Point Text -->
-  						</div><!-- End Main Point -->
-  					</div>
-  					<div class="col-md-4">
-  						<div class="main-point">
-  							<i class="line-font icon-screen-smartphone"></i>
-  							<h3>GPS Tracker</h3>
-  							<p></p>
-  						</div>
-  					</div>
-  					<div class="col-md-4">
-  						<div class="main-point">
-  							<i class="line-font icon-calendar"></i>
-  							<h3>Scheduled Deliveries</h3>
-  							<p></p>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</section>
-  		<!--End Three Main Points -->
-
-
-
-  <section id="how-it-works" class="section bg-white">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-12">
-  					<div class="headline">
-  						<h2 style="color:#b45c8f;">How it works</h2>
-  						<p>Register today to start enjoying free deliveries</p>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-md-5">
-  					<!-- How It Works List -->
-  					<ul class="steps-list">
-  						<li>
-  							<span>1</span><!-- Step Number -->
-  							<h4>Sign-Up</h4><!-- Step Title -->
-  							<p>Fast and Easy Process</p><!-- Step Description -->
-  						</li>
-  						<li>
-  							<span>2</span>
-  							<h4>Verify</h4>
-  							<p>In a matter of minutes!</p>
-  						</li>
-  						<li>
-  							<span>3</span>
-  							<h4>Shop</h4>
-  							<p>Browse and Select Your Products</p>
-  						</li>
-  						<li>
-  							<span>4</span>
-  							<h4>Order</h4>
-  							<p>Enjoy Fast & Free Delivery!</p>
-  						</li>
-  					</ul>
-  					<!-- End How It Works List -->
-  				</div>
-  				<div class="col-md-7">
-            <img src="https://cdn0.vox-cdn.com/uploads/chorus_image/image/47937273/9054369114_7f37322cfb_z.0.jpg" class="img-responsive" alt="" title="">
-  				</div>
-  			</div>
-  		</div>
   	</section>
 
-
-	<section class="section bg-testimonial cover border-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="headline">
-            <h2 style="color: #444;font-weight: lighter;">Are You In Our Delivery Zone ?</h2><br />
-						<img width="800" src="img/zone3.png"  alt="Google Map of westwood, los angeles">
-					</div>
-				</div>
-			</div>
-	</section>
-	<!-- End Testimonials -->
-
-	<!-- Call To Action -->
-	<section class="section bg-blue-pattern" style="background-color:#b45c8f;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center white-text">
-					<div class="headline">
-						<h2><strong>Ready</strong> To Join  ?</h2>
-						<p class="subline">Sign up now for exclusive deals in Westwood.</p>
-					</div>
-					<a href="register.html" class="btn btn-transparent btn-big">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Call To Action -->
 
 	<!-- Footer Top -->
 	<section class="footer footer-top">
