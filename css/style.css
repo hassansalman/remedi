@@ -496,11 +496,11 @@ span.round-tab i{
 }
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 2px solid #5bc0de;
+    border: 2px solid #f57694;
 
 }
 .wizard li.active span.round-tab i{
-    color: #5bc0de;
+    color: #ab4f9c;
 }
 
 span.round-tab:hover {
@@ -532,7 +532,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 10px solid transparent;
-    border-bottom-color: #5bc0de;
+    border-bottom-color: #f0749d;
 }
 
 .wizard .nav-tabs > li a {
