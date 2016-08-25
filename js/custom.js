@@ -68,3 +68,53 @@ function nextTab(elem) {
 function prevTab(elem) {
     $(elem).prev().find('a[data-toggle="tab"]').click();
 }
+
+
+$(function() {
+  //Creating the firebase reference.
+    var firebaseref = new Firebase("https://remedibrand.firebaseio.com/");
+
+	//Global Variables for userData and the firebase reference to the list.
+    var listRef = null;
+	var userData = null;
+
+	//timer is used for few animations for the status messages.
+	var timer = null;
+
+	//Clear the Status block for showing the Status of Firebase Calls
+    $(".status").removeClass('hide').hide();
+
+//Handling Signup process
+  $("#signup-btn").on('click', function() {
+
+      var email = $("#email").val();
+      var password = $("#password").val();
+      var firstName = $("#f_name").val();
+      var lastName = $("#l_name").val();
+      var phone = $("#phone").val();
+      firebaseref.createUser({
+          email: email,
+          password: password,
+          firstName: f_name,
+          lastName: l_name,
+          phone: phone
+      },
+
+      function(error, userData) {
+          if (error) {
+              console.log("Error creating user:", error);
+              $("#signup-btn").parents("#register").find('.status').html("Error creating user:" + error).show();
+          } else {
+              console.log("Successfully created user account with uid:", userData.uid);
+              $("#signup-btn").parents("#register").find('.status').html("Successfully created user account with uid:" + userData.uid).show();
+              firebaseref.authWithPassword({
+                  email: email,
+                  password: password,
+              },signupLoginCallback);
+
+          }
+      });
+  });
+
+
+});
