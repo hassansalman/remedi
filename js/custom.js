@@ -70,51 +70,70 @@ function prevTab(elem) {
 }
 
 
-$(function() {
-  //Creating the firebase reference.
-    var firebaseref = new Firebase("https://remedibrand.firebaseio.com/");
 
-	//Global Variables for userData and the firebase reference to the list.
-    var listRef = null;
-	var userData = null;
 
-	//timer is used for few animations for the status messages.
-	var timer = null;
 
-	//Clear the Status block for showing the Status of Firebase Calls
-    $(".status").removeClass('hide').hide();
+//create firebase reference
+var dbRef = new Firebase("https://remedibrand.firebaseio.com/");
+var clientsRef = dbRef.child('clients')
 
-//Handling Signup process
-  $("#signup-btn").on('click', function() {
+//load older conatcts as well as any newly added one...
+clientsRef.on("child_added", function(snap) {
+  console.log("added", snap.key(), snap.val());
+  $('#clients').append(contactHtmlFromObject(snap.val()));
+});
 
-      var email = $("#email").val();
-      var password = $("#password").val();
-      var firstName = $("#f_name").val();
-      var lastName = $("#l_name").val();
-      var phone = $("#phone").val();
-      firebaseref.createUser({
-          email: email,
-          password: password,
-          firstName: f_name,
-          lastName: l_name,
-          phone: phone
-      },
-
-      function(error, userData) {
-          if (error) {
-              console.log("Error creating user:", error);
-              $("#signup-btn").parents("#register").find('.status').html("Error creating user:" + error).show();
-          } else {
-              console.log("Successfully created user account with uid:", userData.uid);
-              $("#signup-btn").parents("#register").find('.status').html("Successfully created user account with uid:" + userData.uid).show();
-              firebaseref.authWithPassword({
-                  email: email,
-                  password: password,
-              },signupLoginCallback);
-
+//save contact
+$('.addValue').on("click", function( event ) {
+    event.preventDefault();
+    if( $('#name').val() != '' || $('#email').val() != '' ){
+      clientsRef
+        .push({
+          first: $('#first').val(),
+          last: $('#last').val(),
+          email: $('#email').val(),
+          phone: $('#phone').val()
           }
-      });
+        })
+        registerForm.reset();
+    } else {
+      alert('Please fill at least name or email!');
+    }
+  });
+
+  $("#login-btn").on('click', function()
+  {
+          var email = $("#login-email").val();
+          var password = $("#login-password").val();
+          dbRef.authWithPassword({
+              email: email,
+              password: password
+          },
+          function(error, authData) {
+              if (error) {
+                  console.log("Login Failed!", error);
+              } else {
+                  console.log("Authenticated successfully with payload:", authData);
+              }
+          });
   });
 
 
-});
+//prepare conatct object's HTML
+function contactHtmlFromObject(client){
+  console.log( client );
+  var html = '';
+  html += '<li class="list-group-item client">';
+    html += '<div>';
+      html += '<p class="lead">'+client.name+'</p>';
+      html += '<p>'+client.email+'</p>';
+      html += '<p><small title="'
+                +client.location.zip+'">'
+                +client.location.city
+                +', '
+                +client.location.state
+                +'</small></p>';
+    html += '</div>';
+  html += '</li>';
+  return html;
+}

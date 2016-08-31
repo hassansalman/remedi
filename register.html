@@ -173,26 +173,26 @@
                             <h3>Step 1</h3>
                             <p> Please Enter Information</p>
                             <fieldset>
-                            <form>
+                            <form method="post" name="registerForm">
                               <div class="form-group">
                                 <div class="row">
                                   <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
                                       <label for="f_name">First Name</label>
-                                      <input type="text" name="f_name" id="f_name" class="form-control" required placeholder="">
+                                      <input type="text" name="f_name" id="first" class="form-control" required placeholder="">
                                     </div>
                                   </div>
                                   <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
                                       <label for="l_name">Last Name</label>
-                                      <input type="text" name="l_name" id="l_name" class="form-control" required placeholder="">
+                                      <input type="text" name="l_name" id="last" class="form-control" required placeholder="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
                                 <div class="form-group">
                                   <label for="email">Email address</label>
-                                  <input type="email" class="form-control" id="email" placeholder="">
+                                  <input type="email" class="form-control" id="email" name="email" required placeholder="">
                                 </div>
                                 <div class="form-group">
                                   <label for="phone">Primary Phone</label>
@@ -217,7 +217,7 @@
                               </form>
                             </fieldset>
                             <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default next-step">Save and continue</button></li>
+                                <li><button type="button" class="btn btn-default next-step addValue">Save and continue</button></li>
                             </ul>
                         </div>
                         <div class="tab-pane" role="tabpanel" id="step2">
@@ -267,9 +267,9 @@
 			<div class="row">
 				<!-- Footer Intro  -->
         <div class="col-md-4">
-					<h3>Remedi Cannabis Brand</h3>
-					<p>Remedi is a Los Angeles based consulting and management firm serving the medicinal marijuana industry.</p>
-					<p>We are dedicated to serving the medical marijuana community by providing the highest quality standards .</p>
+					<h3>RemediBrand</h3>
+					<p>Remedi is a California non-profit cooperative based in Los Angeles. Our consulting and management firm specializes in serving the medicinal cannabis industry.
+					We are dedicated to providing the highest quality standards with superior customer service.</p>
 				</div>
 				<!-- End Footer Intro  -->
 				<!-- Contact Details  -->
